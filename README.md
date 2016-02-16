@@ -7,24 +7,17 @@ So I write this python script to help convert a PDF format reading into txt form
 ### Setup
 First we need to setup the pdf reading component by:
 ```
-$cd NoWords
-$python pdfminer/setup.py 
+$ cd NoWords
+$ python pdfminer/setup.py 
 ```
 
 ### Usage
 To convert the file, do:
 ```
-$python NoWords.py <PATH TO THE PDF FILE> 
-```
-and the output txt file should be in the same path of the input file.
-
-### Sample
-To convert the file, do:
-```
-$python NoWords.py <PATH TO THE PDF FILE> 
+$ python NoWords.py <PATH TO THE PDF FILE> 
 
 # for example
-$python NoWords.py sample/AAW.pdf
+$ python NoWords.py sample/AAW.pdf
 
 ```
 and the output txt file should be in the same path of the input file.
