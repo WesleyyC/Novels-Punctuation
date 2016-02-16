@@ -7,6 +7,8 @@ from txt2pdf import pyText2Pdf
 import re
 import sys
 
+pdf = False
+
 def convert_pdf_to_txt(path):
 	rsrcmgr = PDFResourceManager()
 	retstr = StringIO()
@@ -39,4 +41,8 @@ if __name__ == "__main__":
 	f = open(output_path+'.txt', 'w')
 	f.write(txt)
 	f.close()
+	if pdf:
+		pdfFile = pyText2Pdf()
+		pdfFile.SetIO(output_path+'.txt',output_path+'.pdf')
+		pdfFile.Convert()
 
