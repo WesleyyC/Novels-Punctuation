@@ -7,7 +7,7 @@ from txt2pdf import pyText2Pdf
 import re
 import sys
 
-pdf = True
+pdf = False
 
 def convert_pdf_to_txt(path):
 	rsrcmgr = PDFResourceManager()
